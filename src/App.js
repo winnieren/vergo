@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import barChart from './Bar';
+import BarChart from './Bar';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <BarChart/>
     </div>
   );
 }
