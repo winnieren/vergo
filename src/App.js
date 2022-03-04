@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import LineGraph from './LineGraph';
 import React, { useEffect } from "react";
-import * as d3 from "d3";
+import Button from '@mui/material/Button';
 import DropDown from './DropDown';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <div> Researcher Dashboard</div>
       <div>
         <DropDown />
+        <Button>Export</Button>
       </div>
       <LineGraph/>
       <LineGraph/>
