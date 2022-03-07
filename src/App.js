@@ -4,18 +4,30 @@ import LineGraph from './LineGraph';
 import React, { useEffect } from "react";
 import Button from '@mui/material/Button';
 import DropDown from './DropDown';
+import DropDown2 from './DropDown2';
 
 function App() {
 
   return (
     <div className="App">
-      <div> Researcher Dashboard</div>
-      <div>
-        <DropDown />
-        <Button>Export</Button>
+      <div className="title">
+        <h1>Researcher Dashboard</h1>
       </div>
-      <LineGraph/>
-      <LineGraph/>
+      <div className="container">
+        <div className="dropdown">
+        <DropDown />
+        </div>
+        <div className="filter">
+        <DropDown2 />
+        </div>
+        <div className="buttonExport">
+          <Button>Export</Button>
+        </div>
+      </div>
+      <div className="container">
+        <LineGraph/>
+        <LineGraph/>
+      </div>
     </div>
   );
 }

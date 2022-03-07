@@ -53,6 +53,19 @@ function LineGraph() {
       .attr("stroke", "steelblue")
       .attr("stroke-width", 1.5)
       .attr("d", valueLine);
+    svg.append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "end")
+      .attr("x", width)
+      .attr("y", height + 50)
+      .text("Date");
+    svg.append("text")
+      .attr("class", "y label")
+      .attr("text-anchor", "end")
+      .attr("y", 6)
+      .attr("dy", ".75em")
+      .attr("transform", "rotate(-90)")
+      .text("Pain Level");
 
   }
 

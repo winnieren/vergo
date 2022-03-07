@@ -7,6 +7,32 @@
   pointer-events: none;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  width: 30%;
+  position: relative;
+}
+
+.filter {
+  width: 30%;
+  position: relative;
+}
+
+.buttonExport {
+  width: 30%;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

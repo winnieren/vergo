@@ -6,7 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 
-function DropDown() {
+function DropDown2() {
     const [age, setAge] = useState("");
 
     function handleChange(event) {
@@ -15,20 +15,21 @@ function DropDown() {
 
 return (
     <FormControl fullWidth>
-    <InputLabel id="demo-simple-select-label">Graph Positions</InputLabel>
+    <InputLabel id="demo-simple-select-label">Chronic Pain History
+</InputLabel>
     <Select
     labelId="demo-simple-select-label"
     id="demo-simple-select"
     value={age}
-    label="Graph Positions"
+    label="Chronic Pain History"
     onChange={handleChange}
     >
-    <MenuItem value={10}>x-position</MenuItem>
-    <MenuItem value={20}>y-position</MenuItem>
-    <MenuItem value={30}>z-position</MenuItem>
+    <MenuItem value={10}>Both With Chronic Pain and Without</MenuItem>
+    <MenuItem value={20}>Only Chronic Pain</MenuItem>
+    <MenuItem value={30}>Only Without Chronic Pain</MenuItem>
     </Select>
     </FormControl>
 );
 }
- export default DropDown;
+ export default DropDown2;
 
