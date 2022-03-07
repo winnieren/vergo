@@ -21,7 +21,7 @@ function App() {
         <DropDown2 />
         </div>
         <div className="buttonExport">
-          <Button>Export</Button>
+          <Button target="_blank" href="https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv">Export</Button>
         </div>
       </div>
       <div className="container">
